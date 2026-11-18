@@ -1,0 +1,17 @@
+[smoke]
+vocab_size = 65
+block_size = 64
+n_embd = 64
+n_head = 4
+n_layer = 2
+dropout = 0.1
+batch_size = 8
+
+[experiment]
+vocab_size = 65
+block_size = 128
+n_embd = 128
+n_head = 4
+n_layer = 2
+dropout = 0.1
+batch_size = 16

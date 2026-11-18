@@ -1,0 +1,10 @@
+[data]
+dataset_id = "tinyshakespeare"
+source_url = "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+provenance_dir = "data/provenance"
+train_ratio = 0.9
+default_context_length = 128
+default_batch_size = 16
+seed = 1337

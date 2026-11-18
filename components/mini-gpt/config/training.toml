@@ -1,0 +1,33 @@
+[smoke]
+model_preset = "smoke"
+iterations = 20
+learning_rate = 0.0003
+weight_decay = 0.1
+beta1 = 0.9
+beta2 = 0.95
+gradient_clip = 1.0
+batch_size = 8
+context_length = 64
+evaluation_interval = 10
+evaluation_batches = 4
+seed = 1337
+device = "cpu"
+checkpoint_interval = 10
+generation_tokens = 80
+
+[experiment]
+model_preset = "experiment"
+iterations = 2000
+learning_rate = 0.0003
+weight_decay = 0.1
+beta1 = 0.9
+beta2 = 0.95
+gradient_clip = 1.0
+batch_size = 16
+context_length = 128
+evaluation_interval = 250
+evaluation_batches = 50
+seed = 1337
+device = "cpu"
+checkpoint_interval = 250
+generation_tokens = 200

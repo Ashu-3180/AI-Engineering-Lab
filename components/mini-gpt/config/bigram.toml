@@ -1,0 +1,13 @@
+[experiment]
+id = "bigram-baseline"
+device = "cpu"
+
+[training]
+iterations = 200
+learning_rate = 0.01
+weight_decay = 0.0
+evaluation_interval = 50
+evaluation_batches = 10
+batch_size = 16
+context_length = 128
+seed = 1337
