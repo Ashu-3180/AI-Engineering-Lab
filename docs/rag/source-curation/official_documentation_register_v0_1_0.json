@@ -1,0 +1,218 @@
+{
+  "register_name": "RAG Official Documentation Acquisition Register",
+  "register_version": "0.1.0",
+  "created_at": "2026-11-19",
+  "scope": "Twenty official documentation acquisition units T01-T20.",
+  "sources": [
+    {
+      "source_id": "T01",
+      "title": "Python data model and built-in types",
+      "url": "https://docs.python.org/3.15/reference/datamodel.html",
+      "version_or_snapshot": "Python 3.15.2",
+      "licence_evidence": "PSF-2.0; docs code examples additionally 0BSD",
+      "licence_classification": "PSF-2.0 + 0BSD examples",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T02",
+      "title": "Python exception handling",
+      "url": "https://docs.python.org/3.15/tutorial/errors.html",
+      "version_or_snapshot": "Python 3.15.2",
+      "licence_evidence": "PSF-2.0; docs code examples additionally 0BSD",
+      "licence_classification": "PSF-2.0 + 0BSD examples",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T03",
+      "title": "Python virtual environments",
+      "url": "https://docs.python.org/3.15/library/venv.html",
+      "version_or_snapshot": "Python 3.15.2",
+      "licence_evidence": "PSF-2.0; docs code examples additionally 0BSD",
+      "licence_classification": "PSF-2.0 + 0BSD examples",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T04",
+      "title": "PostgreSQL INSERT and ON CONFLICT",
+      "url": "https://www.postgresql.org/docs/18/sql-insert.html",
+      "version_or_snapshot": "PostgreSQL 18.7",
+      "licence_evidence": "PostgreSQL License",
+      "licence_classification": "PostgreSQL License",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T05",
+      "title": "PostgreSQL transactions",
+      "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+      "version_or_snapshot": "PostgreSQL 18.7",
+      "licence_evidence": "PostgreSQL License",
+      "licence_classification": "PostgreSQL License",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T06",
+      "title": "PostgreSQL index types and B-tree",
+      "url": "https://www.postgresql.org/docs/18/indexes-types.html",
+      "version_or_snapshot": "PostgreSQL 18.7",
+      "licence_evidence": "PostgreSQL License",
+      "licence_classification": "PostgreSQL License",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T07",
+      "title": "PyTorch automatic differentiation",
+      "url": "https://docs.pytorch.org/docs/2.15/autograd.html",
+      "version_or_snapshot": "PyTorch 2.15.0",
+      "licence_evidence": "PyTorch docs source repository is BSD-licensed",
+      "licence_classification": "BSD (PyTorch docs repository)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T08",
+      "title": "PyTorch nn.Module and parameters",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.Module.html",
+      "version_or_snapshot": "PyTorch 2.15.0",
+      "licence_evidence": "PyTorch docs source repository is BSD-licensed",
+      "licence_classification": "BSD (PyTorch docs repository)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T09",
+      "title": "PyTorch DataLoader",
+      "url": "https://docs.pytorch.org/docs/2.15/data.html",
+      "version_or_snapshot": "PyTorch 2.15.0",
+      "licence_evidence": "PyTorch docs source repository is BSD-licensed",
+      "licence_classification": "BSD (PyTorch docs repository)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T10",
+      "title": "PyTorch no_grad and inference gradients",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.no_grad.html",
+      "version_or_snapshot": "PyTorch 2.15.0",
+      "licence_evidence": "PyTorch docs source repository is BSD-licensed",
+      "licence_classification": "BSD (PyTorch docs repository)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T11",
+      "title": "Chroma collection methods and queries",
+      "url": "https://docs.trychroma.com/reference/python/collection",
+      "version_or_snapshot": "Dated documentation-site snapshot; observed docs repo HEAD e83a441e53f24b6a2fd35f1bf0dbc6a7263809e7",
+      "licence_evidence": "Documentation-content licence not independently confirmed; Chroma software licence is not sufficient evidence",
+      "licence_classification": "PENDING",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T12",
+      "title": "Chroma metadata Where filters",
+      "url": "https://docs.trychroma.com/reference/python/where-filter",
+      "version_or_snapshot": "Dated documentation-site snapshot; observed docs repo HEAD e83a441e53f24b6a2fd35f1bf0dbc6a7263809e7",
+      "licence_evidence": "Documentation-content licence not independently confirmed; Chroma software licence is not sufficient evidence",
+      "licence_classification": "PENDING",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T13",
+      "title": "Chroma clients and local persistence",
+      "url": "https://docs.trychroma.com/reference/python/client",
+      "version_or_snapshot": "Dated documentation-site snapshot; observed docs repo HEAD e83a441e53f24b6a2fd35f1bf0dbc6a7263809e7",
+      "licence_evidence": "Documentation-content licence not independently confirmed; Chroma software licence is not sufficient evidence",
+      "licence_classification": "PENDING",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T14",
+      "title": "DoclingDocument structure and provenance",
+      "url": "https://docling-project.github.io/docling/concepts/docling_document/",
+      "version_or_snapshot": "Dated documentation-site snapshot; observed Docling repo HEAD 127451ba4e93b96798b86b21aa14d1b0551e1c13",
+      "licence_evidence": "Docling repository MIT; retain notices and check third-party content",
+      "licence_classification": "MIT (repository-level)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T15",
+      "title": "Docling table export example",
+      "url": "https://docling-project.github.io/docling/_generated/examples/export_tables/",
+      "version_or_snapshot": "Dated documentation-site snapshot; observed Docling repo HEAD 127451ba4e93b96798b86b21aa14d1b0551e1c13",
+      "licence_evidence": "Docling repository MIT; retain notices and check third-party content",
+      "licence_classification": "MIT (repository-level)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T16",
+      "title": "MCP server tools",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "version_or_snapshot": "MCP specification 2026-07-28",
+      "licence_evidence": "MCP specification repository MIT; retain copyright and licence notice",
+      "licence_classification": "MIT (specification)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T17",
+      "title": "MCP host, client and server architecture",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+      "version_or_snapshot": "MCP documentation revision 2026-07-28",
+      "licence_evidence": "MCP documentation repository states CC BY 4.0 for docs excluding specs",
+      "licence_classification": "CC BY 4.0 (documentation)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T18",
+      "title": "MCP STDIO transport",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio",
+      "version_or_snapshot": "MCP specification 2026-07-28",
+      "licence_evidence": "MCP specification repository MIT; retain copyright and licence notice",
+      "licence_classification": "MIT (specification)",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T19",
+      "title": "GitHub REST API pagination",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api?apiVersion=2022-11-28",
+      "version_or_snapshot": "GitHub REST API version 2022-11-28; dated docs snapshot",
+      "licence_evidence": "GitHub Docs states licensed content is CC-BY; retain exact attribution",
+      "licence_classification": "CC BY",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    },
+    {
+      "source_id": "T20",
+      "title": "GitHub REST API rate limits",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28",
+      "version_or_snapshot": "GitHub REST API version 2022-11-28; dated docs snapshot",
+      "licence_evidence": "GitHub Docs states licensed content is CC-BY; retain exact attribution",
+      "licence_classification": "CC BY",
+      "acquisition_status": "identified_not_acquired",
+      "sha256": null
+    }
+  ],
+  "licensing_notes": [
+    "Python official docs identify PSF License Version 2 and additional Zero-Clause BSD for examples.",
+    "PostgreSQL 18 documentation identifies itself as 18.7 documentation and is covered by PostgreSQL License.",
+    "PyTorch documentation source repository pytorch/docs states BSD licensing; this differs from the PyTorch software source repository licence.",
+    "Chroma's software Apache-2.0 licence does not establish documentation-content licensing. T11-T13 remain pending.",
+    "Docling repository is MIT-licensed; retain notices and review third-party materials.",
+    "MCP specification repository is MIT; separate MCP documentation repository states CC BY 4.0 for documentation excluding specifications.",
+    "GitHub Docs style guide states GitHub Docs licensed content is CC-BY; preserve attribution and licence link."
+  ],
+  "policy": "Store raw HTML response bytes as source of record. Keep normalized text separately. Record acquisition timestamp, final URL, HTTP headers, byte count, page title and SHA-256. Public access is not automatically redistribution permission."
+}

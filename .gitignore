@@ -1,0 +1,6 @@
+
+# RAG external source corpus and generated extraction data
+/data/raw/rag/
+/data/interim/rag/
+/data/processed/rag/
+/data/cache/rag/

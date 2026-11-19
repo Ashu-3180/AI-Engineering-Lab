@@ -1,0 +1,114 @@
+{
+  "review_version": "0.2.0",
+  "review_date": "2026-11-19",
+  "source_probe": "data/interim/rag/research-papers/review/table_probe.json",
+  "source_visual_review": "flagged-source-pages.pdf; page-map.txt",
+  "status": "table_probe_reviewed_indexing_restrictions_recorded",
+  "probe_summary": [
+    {
+      "source_id": "R09",
+      "pdf_page": 22,
+      "strategy": "text",
+      "detected_tables": [
+        {
+          "rows": 20,
+          "columns": 2
+        },
+        {
+          "rows": 11,
+          "columns": 2
+        }
+      ],
+      "result": "row segmentation found but URL strings contain inserted spaces and some label hyphenation; do not use as authoritative URL directory."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 20,
+      "strategy": "text",
+      "detected_tables": [
+        {
+          "rows": 4,
+          "columns": 2
+        }
+      ],
+      "result": "model names and checkpoint URLs are grouped across rows; mappings are corrupted; do not index for exact model-to-URL lookup."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 21,
+      "strategy": "text",
+      "detected_tables": [
+        {
+          "rows": 12,
+          "columns": 45
+        }
+      ],
+      "result": "wide English-results matrix is corrupted across headers and cells; do not use for exact score QA."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 23,
+      "strategy": "text",
+      "detected_tables": [
+        {
+          "rows": 11,
+          "columns": 10
+        }
+      ],
+      "result": "table detector splits dataset names and score columns incorrectly. Baseline page text is visibly more legible, but exact score claims still require a table-specific numeric validation."
+    }
+  ],
+  "page_decisions": [
+    {
+      "source_id": "R09",
+      "pdf_page": 22,
+      "content": "BEIR Table 5, Table 6, Figure 5",
+      "decision": "retain_baseline_page_text_with_url_caveat",
+      "indexing": "May support contextual retrieval. Do not use extracted URLs as authoritative or auto-followable links; this page is not needed as the sole evidence for R09."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 4,
+      "content": "Figure 2 dataset-similarity heatmap",
+      "decision": "retain_caption_and_surrounding_prose_only",
+      "indexing": "Exclude flattened heatmap labels and numerical-looking runs from ordinary text chunks. Keep PDF/page reference."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 8,
+      "content": "Figure 5 multilingual performance charts",
+      "decision": "retain_caption_and_surrounding_prose_only",
+      "indexing": "Exclude fragmented chart labels and plotted values from ordinary text chunks. Keep PDF/page reference."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 20,
+      "content": "Figure 6 and Table 10 checkpoint URLs",
+      "decision": "retain_caption_and_prose; exclude_structured_table_candidate",
+      "indexing": "Do not use find_tables output for model-to-checkpoint mapping. Keep original page reference; URLs require separate verification."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 21,
+      "content": "Table 11 all-English benchmark results",
+      "decision": "exclude_numeric_matrix_from_exact_answer_evidence",
+      "indexing": "Do not answer exact model scores from this page's flattened or candidate table text. Retain only as raw source and page reference."
+    },
+    {
+      "source_id": "R10",
+      "pdf_page": 23,
+      "content": "Table 13 multilingual classification results",
+      "decision": "retain_baseline_text_for_context_only",
+      "indexing": "Original page text is more readable than table-finder output. Exact score answers remain blocked until header/row-to-column alignment is explicitly validated."
+    }
+  ],
+  "global_rules": [
+    "Keep original PDFs, pages.jsonl, extraction_report.json and quality_audit outputs unchanged.",
+    "Never promote find_tables output to trusted structured data solely because a table object was returned.",
+    "Keep source_id and original PDF page on all chunks/evidence.",
+    "Figures may support caption/context retrieval; chart values require visual or structured validation.",
+    "R10 exact numeric comparisons are blocked until validated.",
+    "Licence status is an independent gate from extraction quality."
+  ],
+  "indexing_gate": "Partial only: narrative text can proceed to evidence annotation; flagged charts and unvalidated table values are restricted as described."
+}
